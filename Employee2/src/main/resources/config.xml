@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.capg.model.Employee2" name="emp2">
+		<!-- When both key and value are attributes -->
+		<property name="projects">
+			<map>
+				<entry key="2" value="Sukanya">
+				</entry>
+				<entry key="2" value="Suvarna">
+				</entry>
+
+				<!-- When key is attribute and value is tag -->
+
+				<entry key="1">
+					<value>Shreya</value>
+				</entry>
+				<entry key="3">
+					<value>Pooja</value>
+				</entry>
+
+				<!-- When value is attribute and key is tag -->
+
+				<entry value="Yashas">
+					<key>
+						<value>5</value>
+					</key>
+				</entry>
+				<entry value="Kamala">
+					<key>
+						<value>3</value>
+					</key>
+				</entry>
+
+				<!-- When both key and value are tags -->
+				<entry>
+					<key>
+						<value>5</value>
+					</key>
+					<value>Sundara</value>
+				</entry>
+
+			</map>
+		</property>
+	</bean>
+
+</beans>  
